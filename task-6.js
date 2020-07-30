@@ -3,13 +3,10 @@
 let input;
 let total = 0;
 
-while (true) {
-
-  let input = +prompt("Введите число", '');
-
-  if (!input) break;
-  
+do {
+  let input = +prompt("Введите число", '')
   total += input;
-}
+  if (!input) break;
+} while (true)
 
 alert('Общая сумма чисел равна ' + total);
