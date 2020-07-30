@@ -1,15 +1,15 @@
-// "use strict";
+"use strict";
 
-// let input;
-// let total = 0;
+let input;
+let total = 0;
 
-// while (true) {
+while (true) {
 
-//   let input = +prompt("Введите число", '');
+  let input = +prompt("Введите число", '');
 
-//   if (!input) break;
+  if (!input) break;
   
-//   total += input;
-// }
+  total += input;
+}
 
-// alert('Общая сумма чисел равна ' + total);
+alert('Общая сумма чисел равна ' + total);
