@@ -4,12 +4,14 @@ let input;
 let total = 0;
 
 do {
-  let input = +prompt("Введите число", '')
-  if (isNaN(input)) alert("Введено не число, попробуйте еще раз!");
-  continue;
-  total += input;
-  
-  else if (!input) break;
-} while (true)
+  input = prompt("Введите число");
+  if (input !== null) {
+    if (Number.isNaN(+input)) {
+      alert("Было ведено не число, попробуйте еще раз!");
+      continue;
+    }
+    total += +input;
+  }
+} while (input !== null);
 
-alert('Общая сумма чисел равна ' + total);
+alert(`Общая сумма чисел равна ${+total}`);
